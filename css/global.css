@@ -1,0 +1,867 @@
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.robo{
+    font-family: "Roboto";
+}
+.play{
+    font-family: "Playfair Display";
+}
+.wald{
+    font-family: "Oswald";
+}
+
+@media screen and (max-width: 767px) {
+
+    header{
+        background-color: #fff;
+        border-bottom: 1px solid #abcf49;
+        position: sticky;
+        top: 0;
+    }
+    header > div:nth-child(1),
+    .exploringMainContainer > div:nth-child(4),
+    .exploringMainContainer > div:nth-child(6) > div,
+    .exploringMainContainer > div:nth-child(7) > div,
+    .aboutUsContainer > div:nth-child(2),
+    .aboutUsContainer > div:nth-child(3),
+    .koreanFoodlistContainer > div:nth-child(2) > div,
+    .container.liststyle > div:nth-child(2),
+    .container.tour > div:nth-child(1) > div,
+    .container.tour > div:nth-child(2),
+    .container.tour > div:nth-child(3),
+    .container.tour .textContent,
+    .container.tour .imgContent,
+    .container.tour .lasttextContent,
+    .container.tour .introContent,
+    .container.tourism > div:nth-child(1) > div,
+    .container.tourism > div:nth-child(2),
+    .container.tourism > div:nth-child(3),
+    .container.tourism .lefttextContent,
+    .container.tourism .righttextContent,
+    .container.tourism .lastlefttextContent,
+    .container.tourism .lastrighttextContent,
+    .container.activity > div:nth-child(1) > div,
+    .container.activity > div:nth-child(2),
+    .container.activity > div:nth-child(3),
+    .container.activity .sublefttextContent,
+    .container.activity .subrighttextContent,
+    .container.activity .sublastlefttextContent,
+    .container.activity .sublastrighttextContent,
+    .questionsContainer > div:nth-child(2),
+    .inquiryContainer > div:nth-child(2){
+        max-width: 90%;
+        margin: 0 auto;
+    } 
+    header > div{
+        padding-top: 10px;
+        text-align: center;
+    }
+    header > div > div{
+    }
+    header > div > div > div:nth-child(1){
+        margin-bottom: 25px;
+    }
+    header > div > div > div:nth-child(1) > h1{
+        width: 38.46%;
+        max-width: 100px;
+        display: inline-block;
+    }
+    header > div > div > div:nth-child(1) > h1 > a{}
+    header > div > div > div:nth-child(1) > h1 > a > img{
+        width: 100%;
+    }
+
+    #solution{
+        text-align: left;
+        position: fixed;
+        width: 200px;
+        background-color: #f8fbef;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: left 0.5s ease-in-out;
+        box-sizing: border-box;
+        z-index: 999;
+    }
+    header > div > div > div:nth-child(2){}
+    header > div > div > div:nth-child(2) > nav{
+        display: none;
+    }
+    header > div > div > div:nth-child(2) > div > form{
+        position: relative;
+    }
+    header > div > div > div:nth-child(2) > div > form > label{
+        position: absolute;
+        left: 145px;
+        top: -10px;
+    }
+    header > div > div > div:nth-child(2) > div input[type="checkbox"]{
+        display: none;
+    }
+    #solution input{
+        position: absolute;
+        width: 50px;
+        line-height: 50px;
+        border-style: none;
+        text-indent: -9999px;
+        border-radius: 15px;
+        cursor: pointer;
+        right: 20px;
+        margin: 30px 0;
+        transition: left 0.5s ease-in-out;
+        background: url("../images/close_button.png") right center no-repeat;
+
+    }
+    #solution.active{
+        left: -200px;
+        transition: left 0.5s ease-in-out;
+    }
+    #solution div > ul{
+        padding: 65px 25px 0 25px;
+    }
+    #solution div ul li{}
+    #solution div ul li strong{
+        font-weight: 500;
+        font-size: 9px;
+        color: #010101;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        display: block;
+        border-bottom: 1px solid #bed08d;
+        line-height: 30px;
+        background: url("../images/aside_button_down.png") right 15px no-repeat;
+    }
+    #solution div ul li:hover strong{
+        background: url("../images/aside_button_top.png") right 15px no-repeat;
+        color: #5db6d0;
+    }
+    .menu strong{
+        cursor: pointer;
+    }
+    .hide{
+        display: none;
+    }
+    
+
+
+    #solution div ul li ul{}
+    #solution div ul li ul li{
+        padding: 7px 0;
+    }
+    #solution div ul li ul li a{
+        font-weight: 400;
+        font-size: 9px;
+        color: #000;
+    }
+    #solution div ul li ul li:hover a{
+        font-weight: 900;
+    }
+    #solution div ul li ul li:last-child a{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 9px;
+        color: #cc9b09;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+    header > div > div{
+        height: 120px;
+    }
+    header > div > div > div:last-child > ul{
+        padding-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    header > div > div > div:last-child > ul > li:not(:first-child){
+        margin-left: 10px;
+    }
+    header > div > div > div:last-child > ul > li > a{
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        text-indent: -9999px;
+    }
+    header > div > div > div:last-child > ul > li > a{
+        content: '';
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(1) > a{
+        background-image: url("../images/sns_f_01.png");
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(2) > a{
+        background-image: url("../images/sns_t_02.png");
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(3) > a{
+        background-image: url("../images/sns_i_03.png");
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(4) > a{
+        background-image: url("../images/sns_p_04.png");
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(5) > a{
+        background-image: url("../images/sns_y_05.png");
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(6) > a{
+        background-image: url("../images/sns_i_06.png");
+    }
+    
+  /* .nav_bg {width: 1260px;} */
+
+
+    footer{
+        background: linear-gradient(180deg, #acd497 0%, #f0f390 100%);
+        padding: 20px 0;
+    }
+    footer > div > div{
+        border: 1px solid #fff;
+        max-width: 240px;
+        margin: 0 auto;
+        padding: 10px 0;
+        text-align: center;
+    }
+    footer > div > div > h2{
+        font-weight: 900;
+        font-size: 12px;
+        color: #333333;
+        margin-bottom: 15px;
+    }
+    footer > div > div:last-child > h2{
+        margin-top: 10px;
+    }
+    footer > div > div input[type="email"]{
+        width: 59.61%;
+        border: none;
+        background-color: #f1fdeb;
+        line-height: 20px;
+        font-weight: 400;
+        font-size: 9px;
+        font-family: inherit;
+        padding-left: 10px;
+    }
+    footer > div > div input[type="email"]::placeholder{
+        color: #a4a2a2;
+    }
+    footer > div > div input[type="submit"]{
+        width: 19.23%;
+        padding: 5px 0;
+        border: none;
+        font-weight: 900;
+        font-size: 9px;
+        color: #fff;
+        background-color: #f1b413;
+        text-transform: uppercase;
+    }
+    footer > div > div > ul{
+        text-align: center;
+    }
+    footer > div > div > ul > li{
+        display: inline-block;
+    }
+    footer > div > div > ul > li:not(:first-child){
+        margin-left: 5px;
+    }
+    footer > div > div > ul > li > a{
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        text-indent: -9999px;
+        width: 15px;
+        height: 15px;
+        background-size: contain;
+    }
+    footer > div > div > ul > li:nth-child(1) > a{
+        background-image: url("../images/sns_f_01.png");
+    }
+    footer > div > div > ul > li:nth-child(2) > a{
+        background-image: url("../images/sns_t_02.png");
+    }
+    footer > div > div > ul > li:nth-child(3) > a{
+        background-image: url("../images/sns_i_03.png");
+    }
+    footer > div > div > ul > li:nth-child(4) > a{
+        background-image: url("../images/sns_p_04.png");
+    }
+    footer > div > div > ul > li:nth-child(5) > a{
+        background-image: url("../images/sns_y_05.png");
+    }
+    footer > div > div > ul > li:nth-child(6) > a{
+        background-image: url("../images/sns_i_06.png");
+    }
+
+    footer > div > div > p{
+        margin-top: 10px;
+        font-weight: 600;
+        color: #044728;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 8px;
+    }
+
+}
+/* mobile */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .nav_bg label{
+        display: none;
+    }
+    header{
+        background-color: #fff;
+        border-bottom: 2px solid #abcf49;
+    }
+    header > div:nth-child(1),
+    .exploringMainContainer > div:nth-child(4),
+    .exploringMainContainer > div:nth-child(6) > div,
+    .exploringMainContainer > div:nth-child(7) > div,
+    .aboutUsContainer > div:nth-child(2),
+    .aboutUsContainer > div:nth-child(3),
+    .koreanFoodlistContainer > div:nth-child(2) > div,
+    .container.liststyle > div:nth-child(2),
+    .container.tour > div:nth-child(1) > div,
+    .container.tour > div:nth-child(2),
+    .container.tour > div:nth-child(3),
+    .container.tour .textContent,
+    .container.tour .imgContent,
+    .container.tour .lasttextContent,
+    .container.tour .introContent,
+    .container.tourism > div:nth-child(1) > div,
+    .container.tourism > div:nth-child(2),
+    .container.tourism > div:nth-child(3),
+    .container.tourism .lefttextContent,
+    .container.tourism .righttextContent,
+    .container.tourism .lastlefttextContent,
+    .container.tourism .lastrighttextContent,
+    .container.activity > div:nth-child(1) > div,
+    .container.activity > div:nth-child(2),
+    .container.activity > div:nth-child(3),
+    .container.activity .sublefttextContent,
+    .container.activity .subrighttextContent,
+    .container.activity .sublastlefttextContent,
+    .container.activity .sublastrighttextContent{
+        max-width: 720px;
+        margin: 0 auto;
+    } 
+    header > div{
+        padding-top: 45px;
+        text-align: center;
+    }
+    header > div > div{
+    }
+    header > div > div > div:nth-child(1){
+        margin-bottom: 25px;
+    }
+    header > div > div > div:nth-child(1) > h1{}
+    header > div > div > div:nth-child(1) > h1 > a{}
+    header > div > div > div:nth-child(1) > h1 > a > img{}
+
+    #solution{
+        text-align: left;
+        position: fixed;
+        width: 50%;
+        background-color: #f8fbef;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: left 0.5s ease-in-out;
+        box-sizing: border-box;
+        z-index: 999;
+    }
+    header > div > div > div:nth-child(2){}
+    header > div > div > div:nth-child(2) > nav{}
+    header > div > div > div:nth-child(2) > nav > ul{
+        display: flex;
+        justify-content: center;
+    }
+    header > div > div > div:nth-child(2) > nav > ul > li:not(:first-child){
+        margin-left: 25px;
+    }
+    header > div > div > div:nth-child(2) > nav > ul > li > a{
+        font-weight: 500;
+        font-size: 12px;
+        color: #010101;
+        text-transform: capitalize;
+    }
+    header > div > div > div:nth-child(2) > div > form{
+        position: relative;
+    }
+    header > div > div > div:nth-child(2) > div > form > label{
+        position: absolute;
+        left: 350px;
+        top: 0;
+    }
+    header > div > div > div:nth-child(2) > div input[type="checkbox"]{
+        display: none;
+    }
+    #solution input{
+        position: absolute;
+        width: 50px;
+        line-height: 50px;
+        border-style: none;
+        text-indent: -9999px;
+        border-radius: 15px;
+        cursor: pointer;
+        right: 20px;
+        margin: 30px 0;
+        transition: left 0.5s ease-in-out;
+        background: url("../images/close_button.png") right center no-repeat;
+
+    }
+    #solution.active{
+        left: -700px;
+        transition: left 0.5s ease-in-out;
+    }
+    #solution div > ul{
+        padding: 65px 25px 0 25px;
+    }
+    #solution div ul li{}
+    #solution div ul li strong{
+        font-weight: 500;
+        font-size: 14px;
+        color: #010101;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        display: block;
+        border-bottom: 1px solid #bed08d;
+        line-height: 45px;
+        background: url("../images/aside_button_down.png") right 20px no-repeat;
+    }
+    #solution div ul li:hover strong{
+        background: url("../images/aside_button_top.png") right 20px no-repeat;
+        color: #5db6d0;
+    }
+    .menu strong{
+        cursor: pointer;
+    }
+    .hide{
+        display: none;
+    }
+    
+
+
+    #solution div ul li ul{}
+    #solution div ul li ul li{}
+    #solution div ul li ul li a{
+        font-weight: 400;
+        font-size: 12px;
+        color: #000;
+        line-height: 30px;
+    }
+    #solution div ul li ul li:hover a{
+        font-weight: 900;
+    }
+    #solution div ul li ul li:last-child a{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 12px;
+        color: #cc9b09;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+    header > div > div{
+        position: relative;
+        height: 200px;
+    }
+    header > div > div > div:nth-child(3){
+        position: absolute;
+        left: 265px;
+        top: 120px;
+    }
+    header > div > div > div:last-child > ul{
+        padding-top: 25px;
+    }
+    header > div > div > div:last-child > ul:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    header > div > div > div:last-child > ul > li{
+        float: left;
+    }
+    header > div > div > div:last-child > ul > li:not(:first-child){
+        margin-left: 10px;
+    }
+    header > div > div > div:last-child > ul > li > a{
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        text-indent: -9999px;
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(1) > a{
+        background-image: url("../images/sns_f_01.png");
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(2) > a{
+        background-image: url("../images/sns_t_02.png");
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(3) > a{
+        background-image: url("../images/sns_i_03.png");
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(4) > a{
+        background-image: url("../images/sns_p_04.png");
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(5) > a{
+        background-image: url("../images/sns_y_05.png");
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(6) > a{
+        background-image: url("../images/sns_i_06.png");
+    }
+    
+  /* .nav_bg {width: 1260px;} */
+
+
+    footer{
+        background: linear-gradient(180deg, #acd497 0%, #f0f390 100%);
+        padding: 150px 0 100px;
+    }
+    footer > div > div{
+        border: 2px solid #fff;
+        max-width: 540px;
+        margin: 0 auto;
+        padding: 30px 0;
+        text-align: center;
+    }
+    footer > div > div > h2{
+        font-weight: 900;
+        font-size: 18px;
+        color: #333333;
+        margin-bottom: 15px;
+    }
+    footer > div > div:last-child > h2{
+        margin-top: 50px;
+    }
+    footer > div > div input[type="email"]{
+        width: 59%;
+        border: none;
+        background-color: #f1fdeb;
+        line-height: 35px;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: inherit;
+        padding-left: 20px;
+    }
+    footer > div > div input[type="email"]::placeholder{
+        color: #a4a2a2;
+    }
+    footer > div > div input[type="submit"]{
+        width: 13.96%;
+        padding: 10px 0;
+        border: none;
+        font-weight: 900;
+        font-size: 16px;
+        color: #fff;
+        background-color: #f1b413;
+        text-transform: uppercase;
+    }
+    footer > div > div > ul{
+        text-align: center;
+    }
+    footer > div > div > ul > li{
+        display: inline-block;
+    }
+    footer > div > div > ul > li:not(:first-child){
+        margin-left: 10px;
+    }
+    footer > div > div > ul > li > a{
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        text-indent: -9999px;
+        width: 23px;
+        height: 23px;
+    }
+    footer > div > div > ul > li:nth-child(1) > a{
+        background-image: url("../images/sns_f_01.png");
+    }
+    footer > div > div > ul > li:nth-child(2) > a{
+        background-image: url("../images/sns_t_02.png");
+    }
+    footer > div > div > ul > li:nth-child(3) > a{
+        background-image: url("../images/sns_i_03.png");
+    }
+    footer > div > div > ul > li:nth-child(4) > a{
+        background-image: url("../images/sns_p_04.png");
+    }
+    footer > div > div > ul > li:nth-child(5) > a{
+        background-image: url("../images/sns_y_05.png");
+    }
+    footer > div > div > ul > li:nth-child(6) > a{
+        background-image: url("../images/sns_i_06.png");
+    }
+    footer > div > div > p{
+        margin-top: 35px;
+        font-weight: 600;
+        font-size: 12px;
+        color: #044728;
+        text-align: left;
+        padding-left: 20px;
+    }
+}
+/* tablet */
+
+
+@media screen and (min-width: 1280px) {
+
+    .nav_bg label,
+    .nav_bg input[type="checkbox"],
+    .nav_bg input[type="button"]{
+        display: none;
+    }
+
+    header{
+        background: url("../images/main_white_bg.png") left top / cover no-repeat;
+        border-bottom: 1px solid #abcf49;
+        position: sticky; top: 0; width: 100%; z-index: 99;
+    }
+    header > div:nth-child(1),
+    .exploringMainContainer > div:nth-child(4),
+    .exploringMainContainer > div:nth-child(6) > div,
+    .exploringMainContainer > div:nth-child(7) > div,
+    .aboutUsContainer > div:nth-child(2),
+    .aboutUsContainer > div:nth-child(3),
+    .koreanFoodlistContainer > div:nth-child(2) > div,
+    .container.liststyle > div:nth-child(2),
+    .container.tour > div:nth-child(1) > div,
+    .container.tour > div:nth-child(2),
+    .container.tour > div:nth-child(3),
+    .container.tour .textContent,
+    .container.tour .imgContent,
+    .container.tour .lasttextContent,
+    .container.tour .introContent,
+    .container.tourism > div:nth-child(1) > div,
+    .container.tourism > div:nth-child(2),
+    .container.tourism > div:nth-child(3),
+    .container.tourism .lefttextContent,
+    .container.tourism .righttextContent,
+    .container.tourism .lastlefttextContent,
+    .container.tourism .lastrighttextContent,
+    .container.activity > div:nth-child(1) > div,
+    .container.activity > div:nth-child(2),
+    .container.activity > div:nth-child(3),
+    .container.activity .sublefttextContent,
+    .container.activity .subrighttextContent,
+    .container.activity .sublastlefttextContent,
+    .container.activity .sublastrighttextContent{
+        max-width: 1620px;
+        margin: 0 auto;
+    } 
+    header > div{
+        padding-top: 45px;
+        display: flex;
+        justify-content: space-between;
+    }
+    header > div > div{
+        display: flex;
+    }
+    header > div > div > div:nth-child(1){
+        margin-right: 185px;
+    }
+    header > div > div > div:nth-child(1) > h1{}
+    header > div > div > div:nth-child(1) > h1 > a{}
+    header > div > div > div:nth-child(1) > h1 > a > img{}
+    header > div > div > div:nth-child(2){
+    }
+    header > div > div > div:nth-child(2) > nav{
+        margin-bottom: 45px;
+    }
+    header > div > div > div:nth-child(2) > nav > ul{
+        display: flex;
+    }
+    header > div > div > div:nth-child(2) > nav > ul > li:last-child{
+        margin-right: 66px;
+    }
+    header > div > div > div:nth-child(2) > nav > ul > li:not(:first-child){
+        margin-left: 50px;
+    }
+    header > div > div > div:nth-child(2) > nav > ul > li > a{
+        font-weight: 500;
+        font-size: 16px;
+        color: #010101;
+        line-height: 75px;
+        text-transform: capitalize;
+    }
+    header > div > div > div:nth-child(2) > div{
+        margin-left: -425px;
+    }
+    header > div > div > div:nth-child(2) > div > aside > div{}
+    header > div > div > div:nth-child(2) > div > aside > div > ul{
+        display: flex;
+        padding-bottom: 70px;
+    }
+    header > div > div > div:nth-child(2) > div > aside > div > ul > li{
+        width: 20.81%;
+    }
+    header > div > div > div:nth-child(2) > div > aside > div > ul > li:not(:first-child){
+        margin-left: 45px;
+    }
+    header > div > div > div:nth-child(2) > div > aside > div > ul > li > strong{
+        font-weight: 500;
+        font-size: 18px;
+        color: #010101;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        margin-bottom: 30px;
+        display: block;
+    }
+    header > div > div > div:nth-child(2) > div > aside > div > ul > li > ul{}
+    header > div > div > div:nth-child(2) > div > aside > div > ul > li > ul > li{}
+    header > div > div > div:nth-child(2) > div > aside > div > ul > li > ul > li > a{
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+        line-height: 22px;
+    }
+    header > div > div > div:nth-child(2) > div > aside > div > ul > li > ul > li:not(:last-child){
+        margin-bottom: 25px;
+    }
+    header > div > div > div:nth-child(2) > div > aside > div > ul > li > ul > li:last-child > a{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 16px;
+        color: #cc9b09;
+        text-decoration: underline;
+    }
+    header > div > div > div:nth-child(3){
+    }
+    header > div > div > div:last-child > ul{
+        padding-top: 25px;
+    }
+    header > div > div > div:last-child > ul:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    header > div > div > div:last-child > ul > li{
+        float: left;
+    }
+    header > div > div > div:last-child > ul > li:not(:first-child){
+        margin-left: 10px;
+    }
+    header > div > div > div:last-child > ul > li > a{
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        text-indent: -9999px;
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(1) > a{
+        background-image: url("../images/sns_f_01.png");
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(2) > a{
+        background-image: url("../images/sns_t_02.png");
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(3) > a{
+        background-image: url("../images/sns_i_03.png");
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(4) > a{
+        background-image: url("../images/sns_p_04.png");
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(5) > a{
+        background-image: url("../images/sns_y_05.png");
+    }
+    header > div > div > div:last-child > ul > li:nth-of-type(6) > a{
+        background-image: url("../images/sns_i_06.png");
+    }
+    
+  .nav_bg {width: 1260px;}
+
+
+    footer{
+        background: linear-gradient(180deg, #acd497 0%, #f0f390 100%);
+        padding: 150px 0 100px;
+    }
+    footer > div > div{
+        border: 4px solid #fff;
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 65px 0 30px;
+        text-align: center;
+    }
+    footer > div > div > h2{
+        font-weight: 900;
+        font-size: 30px;
+        color: #333333;
+        margin-bottom: 50px;
+    }
+    footer > div > div:last-child > h2{
+        margin-top: 50px;
+    }
+    footer > div > div input[type="email"]{
+        width: 59%;
+        border: none;
+        background-color: #f1fdeb;
+        line-height: 65px;
+        font-weight: 400;
+        font-size: 18px;
+        font-family: inherit;
+        padding-left: 35px;
+    }
+    footer > div > div input[type="email"]::placeholder{
+        color: #a4a2a2;
+    }
+    footer > div > div input[type="submit"]{
+        width: 13.96%;
+        padding: 17px 0;
+        border: none;
+        font-weight: 900;
+        font-size: 26px;
+        color: #fff;
+        background-color: #f1b413;
+        text-transform: uppercase;
+    }
+    footer > div > div > ul{
+        text-align: center;
+    }
+    footer > div > div > ul > li{
+        display: inline-block;
+    }
+    footer > div > div > ul > li:not(:first-child){
+        margin-left: 10px;
+    }
+    footer > div > div > ul > li > a{
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        text-indent: -9999px;
+        width: 23px;
+        height: 23px;
+    }
+    footer > div > div > ul > li:nth-child(1) > a{
+        background-image: url("../images/sns_f_01.png");
+    }
+    footer > div > div > ul > li:nth-child(2) > a{
+        background-image: url("../images/sns_t_02.png");
+    }
+    footer > div > div > ul > li:nth-child(3) > a{
+        background-image: url("../images/sns_i_03.png");
+    }
+    footer > div > div > ul > li:nth-child(4) > a{
+        background-image: url("../images/sns_p_04.png");
+    }
+    footer > div > div > ul > li:nth-child(5) > a{
+        background-image: url("../images/sns_y_05.png");
+    }
+    footer > div > div > ul > li:nth-child(6) > a{
+        background-image: url("../images/sns_i_06.png");
+    }
+
+    footer > div > div > p{
+        margin-top: 20px;
+        font-weight: 600;
+        color: #044728;
+        text-align: left;
+        padding-left: 45px;
+        font-size: 16px;
+    }
+
+}
+/* desktop */
